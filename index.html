@@ -1,13 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafi - WhyAreYou.gay</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fredoka One', cursive;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 14px;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      word-break: break-word;
+    }
+    img {
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      margin-bottom: 16px;
+      animation: bounce 2s infinite;
+      max-width: 80vw;
+      max-height: 40vw;
+    }
+    p {
+      font-size: 1.20em;
+      margin: 10px 0;
+      background: rgba(255,255,255,0.2);
+      padding: 10px 18px;
+      border-radius: 12px;
+      display: inline-block;
+      word-break: break-word;
+      max-width: 90vw;
+    }
+    .footer, .create-banner {
+      left: 50%;
+      transform: translateX(-50%);
+      position: fixed;
+      width: calc(100vw - 32px);
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .footer {
+      bottom: 56px;
+      font-size: 0.95em;
+      opacity: 0.85;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      background: none;
+      box-shadow: none;
+      border: none;
+    }
+    .create-banner {
+      bottom: 14px;
+      background: rgba(0,0,0,0.48);
+      color: #fff700;
+      padding: 13px 16px;
+      border-radius: 16px;
+      font-size: 1.05em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.23);
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.01em;
+      gap: 8px;
+      z-index: 2;
+      border: 2px solid #fff700;
+      flex-wrap: wrap;
+    }
+    .create-banner strong {
+      font-size: 1.08em;
+      color: #fff;
+    }
+    .create-banner span {
+      color: #fff;
+      text-decoration: underline;
+      margin-left: 4px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    /* Floating Emoji Animation */
+    .emoji {
+      position: fixed;
+      font-size: 2rem;
+      opacity: 0.8;
+      pointer-events: none;
+      z-index: 1;
+      animation: float 6s linear infinite;
+    }
+    @keyframes float {
+      from { transform: translateY(100vh) rotate(0); }
+      to { transform: translateY(-10vh) rotate(360deg); }
+    }
+    /* MOBILE STYLES */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5em; }
+      img {
+        width: 120px;
+        height: 120px;
+      }
+      .create-banner, .footer {
+        font-size: 1em;
+        padding: 9px 5vw;
+        max-width: 95vw;
+      }
+      .container {
+        max-width: 98vw;
+      }
+      p { font-size: 1em; padding: 8px 7vw; }
+      .emoji { font-size: 1.4rem; }
+    }
+  </style>
 </head>
 <body>
-    <h1>
-        Hello, mera naam rafi hai and i like to suck cocks!!
-    </h1>
+  <div class="container">
+      <h1>Meet Rafi 🎉</h1>
+      <img src="image.png" alt="Gay Photo here">
+      <p>😅 Yes, my name is Rafi</p>
+      <p>🌈 ...and I am very gay 💋😘</p>
+      <p>Whats the difference btwn 3 cocks and a joke? I can't take a joke!💋🍆</p>
+  </div>
+  <!-- <div class="footer">
+      Made with ♥ on whyareyou.gay
+  </div> -->
+  <div class="create-banner">
+      <strong>Want your own funny page?</strong>
+      👉 Visit <span><a href="https://whyareyou.gay">WhyAreYou.Gay</a></span>  to get yours!
+  </div>
+  <!-- Floating Emojis -->
+  <div class="emoji" style="left:10%; animation-delay:0s;">😂</div>
+  <div class="emoji" style="left:30%; animation-delay:2s;">🌈</div>
+  <div class="emoji" style="left:50%; animation-delay:4s;">🤡</div>
+  <div class="emoji" style="left:70%; animation-delay:1s;">😎</div>
+  <div class="emoji" style="left:90%; animation-delay:3s;">🔥</div>
 </body>
 </html>
